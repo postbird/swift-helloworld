@@ -53,3 +53,17 @@ print("shoppingList", shoppingList, "shoppingLast:", shoppingLast);
 // removeAll
 shoppingList.removeAll();
 print("shoppingList", shoppingList);
+
+// 遍历数组
+shoppingList = ["Eggs", "Apples"];
+// 遍历值
+for item in shoppingList {
+    print("item is", item);
+}
+// 遍历索引+value
+for item in shoppingList.enumerated() {
+    print("item is", item);
+}
+for (index, value) in shoppingList.enumerated() {
+    print("item index is", index, "value is", value);
+}
